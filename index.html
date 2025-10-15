@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monkey vs Aliens: A 2-bit Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-root">
+      <header class="game-header">
+        <h1>Monkey vs Aliens</h1>
+        <p class="subtitle">A 2‑bit choose‑your‑own‑adventure</p>
+      </header>
+
+      <main class="game">
+        <div class="screen-wrap">
+          <canvas id="screen" width="160" height="144" aria-label="Game screen"></canvas>
+        </div>
+        <section id="ui" class="ui">
+          <div id="text" class="text" role="status" aria-live="polite"></div>
+          <div id="choices" class="choices" role="group" aria-label="Choices"></div>
+        </section>
+      </main>
+
+      <noscript>
+        This game requires JavaScript to run.
+      </noscript>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
